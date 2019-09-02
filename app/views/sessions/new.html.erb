@@ -1,0 +1,24 @@
+<div class="top-hero-text-center">
+<div class= "users-new-wrapper">
+  <div class= "container">
+    <div class= "row">
+      <div class= "col-md-offset-4 col-md-4 users-new-container">
+        <h1 class= "top-hero-text-center"> Log in </h1>
+        <%= form_with model: @user do |f| %>
+          <div class= "form-group">
+            <%= f.label :email, class: 'text-white' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+          <div class= "form-group">
+            <%= f.label :password, class: 'text-white' %>
+            <%= f.text_field :password, class: 'form-control' %>
+          </div>
+          <div class= "form-group">
+            <%= f.submit "Login", class: 'form-control' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
